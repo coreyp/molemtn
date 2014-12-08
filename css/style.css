@@ -1,0 +1,158 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* added from thinkful */
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* End of Reset */
+
+
+/* End of Base Styles */
+
+/* CSS STRUCTURE  
+https://smacss.com/book/categorizing
+Base - reset, box
+Layout- grid, defining class,    bootstrap/foundation/jeet
+Module- Individual sections....rooms, 
+State- fuctions...swinging door  overides
+Theme...font,  */
+
+
+/* Navigation Section */
+
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; /*	keeps smooth tye */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+	background: #eeeeee;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+}
+
+.content {
+	padding: 0 15px;
+}
+
+/* Navigation Section */
+.top-navigation {
+    background: #fff;
+}
+
+.top-navigation > .content {
+    margin: 0 auto; /* centering */
+    max-width: 1400px;
+    height: 72px;
+}
+
+.top-navigation .logo {
+	/* margin-left: 8em; */
+	height: 72px;
+	/* padding: 0 1em; */
+}
+
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+/* note The specificity of the navigation menu*/
+
+/* hero section 
+Note: font-weight thinner for all of their headings
+*/
+
+.hero {
+    /* Layout Declarations */
+    text-align: center;
+}
+
+.hero {
+    background-image: url('../images/first-background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /* height: 50em; */
+    background-position: center bottom;
+    height: 45.938rem;
+}
+
+.hero > .content {
+    margin: 0 auto; /* centering */
+    max-width: 1400px;
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.hero-button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px; /* rem ? */
+    padding: 16px 26px; /* em vs px */
+    line-height: 1.33;
+    width: 15%;
+
+    margin: 2em 0;
+    background: #fff;
+    cursor: pointer;
+}
+
