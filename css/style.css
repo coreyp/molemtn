@@ -148,6 +148,7 @@ Note: font-weight thinner for all of their headings
     /* height: 50em; */
     background-position: center bottom;
     height: 45.938rem;
+    overflow: auto; /* ?' good explanation*/
 }
 
 .hero > .content {
@@ -155,11 +156,30 @@ Note: font-weight thinner for all of their headings
     max-width: 1400px;
 }
 
+.hero h1, 
+.hero h2 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+     /* Keeping below repetitive CSS to remind self to bring together alike*/
+}
 
 .hero h1 {
-    font-size: 3em;
+    margin-top: 17.5rem;
+     /* Type Declarations */
+    font-size: 3rem;
     color: white;
+    text-align: center;
 }
+
+.hero h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+/* Buttons */
 
 .hero-button {
     text-shadow: none;
@@ -174,9 +194,30 @@ Note: font-weight thinner for all of their headings
     cursor: pointer;
 }
 
+/*
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+.introduction .half {
+    width: 49%;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}*/
+
+ */
 /*  
 Features Section
 */
+.features {
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
 
 .features > .devices {
     width: 33.3333333%;
@@ -188,7 +229,33 @@ Features Section
     /* give w&h for box sizing*/
 }
 
+/*
 
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+    float:left;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 1.313rem;
+}
+ */
 
 footer {
     clear: both;
@@ -208,3 +275,98 @@ footer > .content {
  * 4. aside
  * 5. footer
  */
+
+
+
+/**
+ * Footer
+ */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+/**
+ * Responsive Design
+ */
+@media (min-width: 48rem) {
+    .content {
+        width: 46rem;
+    }
+}
+@media (min-width: 62rem) {
+    .content {
+        width: 60rem;
+    }
+}
+@media (min-width: 75rem) {
+    .content {
+        width: 60%;
+    }
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+/* Standard syntax */ 
+@keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+
+
+/**
+ * button
+ */
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+} 
