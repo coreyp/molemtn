@@ -70,38 +70,56 @@ body {
 	letter-spacing: 0.03em;
 }
 
+div {
+    /* border 2px solid block; for testing */
+}
+
 .content {
-	padding: 0 15px;
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+
+:focus {
+    outline: none;
 }
 
 /* Navigation Section */
+
 .top-navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
     background: #fff;
+    border-bottom: 1px solid #DDD;
 }
 
 .top-navigation > .content {
     margin: 0 auto; /* centering */
     max-width: 1400px;
-    height: 72px;
+    height: 4.375rem;
 }
 
 .top-navigation .logo {
 	/* margin-left: 8em; */
-	height: 72px;
+	/*height: 72px; */
+    height: 4.5rem;
 	/* padding: 0 1em; */
+    z-index: 9999; /* puts on top */
 }
 
 .top-navigation .links {
     float: right;
     font-family: 'Roboto', sans-serif;
     color: #838994;
-    font-size: 16px;
-    margin-top: 25px;
+    font-size: 1.04rem;
+    margin-top: 1.8rem;
     -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 25px;
+    /*margin-left: 25px; or */
+    margin-left: 1.563rem;
 }
 .top-navigation .links .active {
     color: #4c5058;
@@ -114,7 +132,7 @@ body {
 
 /* note The specificity of the navigation menu*/
 
-/* hero section 
+/* Hero section 
 Note: font-weight thinner for all of their headings
 */
 
@@ -157,24 +175,20 @@ Note: font-weight thinner for all of their headings
 }
 
 /*  
-
 Features Section
-
 */
 
-.features-container {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px; /* Firefox */
-    column-gap: 40px;
-
-    -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
-    -moz-column-rule: 4px outset #ff00ff; /* Firefox */
-    column-rule: 4px outset #ff00ff;
+.features > .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging 
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+    /* give w&h for box sizing*/
 }
+
+
 
 footer {
     clear: both;
@@ -185,3 +199,12 @@ footer > .content {
     margin: 0 auto; /* centering */
     max-width: 1400px;
 }
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
