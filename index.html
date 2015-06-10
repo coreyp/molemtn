@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rammetto+One|Roboto:400,500,300' rel='stylesheet' type='text/css'>
+
  <!--   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon_name.ico">
@@ -15,14 +16,10 @@
 	    <div class="content">
 	        
 	          <ul class="links">
-	            <li class="active">Meet Karma</li>
-	            <li>How it Works</li>
-	            <li>Store</li>
-	            <li>Blog</li>
-	            <li>Help</li>
-	            <li>Login</li>
+	            <span><a href="#howto"><li class="active">How It Works</li></a></span>
+	            <span><a href="#join"><li>Contact</li></a></span>
 	        </ul>
-	       <img class="logo" src="images/karma-logo.svg" alt="Logo Image" width="26px">
+           <img class="logo" src="images/moledesk.png" alt="Logo Image" >
 <!-- have floating elements above non-floating elements -->
 	    </div>
 	</nav>
@@ -38,10 +35,11 @@
 -->
 	<section class="hero">
 		<div class="content">
-			<h1 class="hero-introduction"> Introducing Karma </h1>
-			<h2 class="hero-tagline"> Bring Wifi with you, everywhere you go. </h2>
+			<h1 class="hero-introduction"> Mole Mtn.</h1>
+			<br><br><h2 class="hero-tagline"> Corporate Intelligence. On Demand. </h2>
 
-			<button class="hero-button"> Learn More </button>
+			<!-- <button class="hero-button"> Learn More </button> -->
+            <input type="button" class="hero-button" value="Learn More" onClick="location.href='#howto'" />
 
 		</div>
 	</section>
@@ -53,53 +51,54 @@ add figcaptions
 http://css-tricks.com/fighting-the-space-between-inline-block-elements/
 -->
 
-    <section class="features">
+    <section id="howto" class="features">
         <div class="content">
 
-            <h2>Everyone needs a little Karma.</h2>
+            <h2>A private network for targeted research</h2>
 
             <ul class="devices">
                 <li>
-                    <img width="127px" height="127px" src="images/icon-devices.svg" alt="Internet for all devices image">
+                    <img width="191px" src="images/shareinfo.png" alt="Share Knowledge">
                     <div class="caption">
-                        <h3>Internet for all devices</h3>
+                        <h3>Share Knowledge</h3>
                     </div>
                 </li>
                 <li>
-                    <img width="127px" height="127px" src="images/icon-coffee.svg" alt="Boost your productivity image">
+                    <img width="191px" src="images/earnrewards.png" alt="Earn Rewards">
                     <div class="caption">
-                        <h3>Boost your productivity</h3>
+                        <h3>Earn Rewards</h3>
                     </div>
                 </li>
                 <li>
-                    <img width="127px" height="127px" src="images/icon-refill.svg" alt="Pay as You Go image">
+                    <img width="191px" src="images/victory.png" alt="Everyone Wins">
                     <div class="caption">
-                        <h3>Pay as You Go</h3>
+                        <h3>Everyone Wins</h3>
                     </div>
                 </li>
             </ul>
-        </div>
-    </section>
 
+        </div>
+</section>
+
+<section class="features">
+
+ <div class="content2">
+            <p>Mole Mtn. connects people who have information with people who want information—and who are willing to pay for it.</p><br>
+            <p>Our secure platform facilitates mutually beneficial exchanges across companies and cultures.</p><br>
+            <p>We increase transparency, accelerate competition and deliver truly disruptive innovation.</p><br>
+
+    <input id="join" type="button" class="footer-button" value="Join the private beta" onClick="window.location.href='mailto:someone@gmail.com';" />
+</div>
+</section>
+
+            
 <hr>
 
     <footer class="social">
         <div class="content">
             <hr>
-            <h5>Join us on</h5>
-            <ul class="icons">
-                <li class="twitter">
-                    <i class="fa fa-twitter"></i>
-                </li>
-                <li class="facebook">
-                    <i class="fa fa-facebook"></i>
-                </li>
-                <li class="instagram">
-                    <i class="fa fa-instagram"></i>
-                </li>
-            </ul>
             <span class="copy">
-                &copy; Karma Mobility, Inc.
+                &copy; <a href="http://monkeywrench.international">Monkeywrench.International</a>
             </span>
         </div>
     </footer>
